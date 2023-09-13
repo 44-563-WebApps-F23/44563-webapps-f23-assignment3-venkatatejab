@@ -30,6 +30,61 @@
     <li>Mutton Biryani</li>
 </ul>
 <a href="mystats.html">link to Mystats</a>
+
+<h4>Tables</h4>
+<p>Exploring different sports can be a great way to stay active and discover 
+   new interests. Below, I've listed four sports that I highly recommend trying. 
+   Each offers unique benefits and experiences.</p>
+<table>
+    <tr>
+        <th>Sport</th>
+        <th>Reason for Recommendation</th>
+        <th>Weekly Time Commitment (hours)</th>
+    </tr>
+    <tr>
+        <td>Swimming</td>
+        <td>Great full-body workout</td>
+        <td>4-6 hours</td>
+    </tr>
+    <tr>
+        <td>Tennis</td>
+        <td>Enhances agility</td>
+        <td>3-5 hours</td>
+    </tr>
+    <tr>
+        <td>Hiking</td>
+        <td>Provides a connection with nature</td>
+        <td>5-7 hours</td>
+    </tr>
+    <tr>
+        <td>Yoga</td>
+        <td>Improves flexibility</td>
+        <td>2-4 hours</td>
+    </tr>
+</table>
 <hr>
+<h4>Code</h4>
+<blockquote > First, employing a Set swiftly winnows down duplicates, ensuring only unique values 
+    remain. Second, utilizing the reduce method elegantly condenses the process, efficiently 
+    filtering out redundant elements. Lastly, employing filter with precise indexing offers another 
+    concise avenue to achieve the desired outcome. Each method bears its own merits, but all share 
+    a common thread of efficiency and clarity in their implementation.</blockquote>
+ <a href="https://stackoverflow.com/questions/22352934/remove-duplicates-from-an-array-in-java">Link to source</a>
+ <pre>
+    const array = [1, 1, 1, 3, 3, 2, 2];
+
+    // Method 1: Using a Set
+    const unique = [...new Set(array)];
+    
+    // Method 2: Array.prototype.reduce
+    const unique = array.reduce((result, element) => {
+      return result.includes(element) ? result : [...result, element];
+    }, []);
+    
+    // Method 3: Array.prototype.filter
+    const unique = array.filter((element, index) => {
+      return array.indexOf(element) === index;
+    });
+ </pre>
 </body>
 </html>
